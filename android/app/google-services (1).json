@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405407297726",
+    "project_id": "login2-6169e",
+    "storage_bucket": "login2-6169e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405407297726:android:2ed72a05cb971f8fbb2eef",
+        "android_client_info": {
+          "package_name": "com.codegemz.flutlab.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0FEv3jRYwON_zMRLwVFQSbTxPfl9-1ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

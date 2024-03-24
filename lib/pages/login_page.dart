@@ -77,7 +77,7 @@ class _LoginPage extends State<LoginPage> {
                     )
                         .then((result) {
                       Navigator.of(context)
-                          .pushNamedAndRemoveUntil('/main', (_) => false);
+                          .pushNamedAndRemoveUntil('/home', (_) => false);
                     }).catchError((Object exception) {
                       if (exception is FirebaseAuthException) {
                         ScaffoldMessenger.of(context).showSnackBar(
