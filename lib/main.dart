@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'dart:async';
 
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -7,6 +9,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:login/firebase_options.dart';
 import 'package:login/pages/home_page.dart';
+import 'package:login/screens/featuerd_screen.dart';
 
 import 'pages/login_page.dart';
 import 'pages/main_page.dart';
@@ -62,9 +65,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/main': (context) => LoginPage(),
         '/register': (context) => RegisterPage(),
-        '/home': (context) => HomePage(
-              userEmail: '',
-            ),
+        '/home': (context) => FeaturedScreen(),
       },
     );
   }
