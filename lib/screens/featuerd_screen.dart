@@ -3,12 +3,14 @@
 import 'package:login/constants/color.dart';
 import 'package:login/models/category.dart';
 import 'package:login/screens/details_screen.dart';
+import 'package:login/screens/logout.dart';
 import 'package:login/widget/category_card.dart';
 import 'package:login/widget/circle_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:login/widget/search_testfield.dart';
 import 'package:login/widget/lesson_card.dart'; // Assuming CategoryCard is defined in a separate file
+import 'package:login/screens/base_screen.dart';
 
 class FeaturedScreen extends StatefulWidget {
   const FeaturedScreen({Key? key}) : super(key: key);
@@ -130,10 +132,15 @@ class AppBar extends StatelessWidget {
                 "Hello,\nGood Morning",
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              CircleButton(
-                icon: Icons.notifications,
-                onPressed: () {},
-              ),
+              IconButton(
+                icon: Icon(Icons.logout),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoggedOutScreen()),
+                  );
+                },
+              )
             ],
           ),
           const SizedBox(

@@ -9,6 +9,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:login/firebase_options.dart';
 import 'package:login/pages/home_page.dart';
+import 'package:login/screens/base_screen.dart';
 import 'package:login/screens/featuerd_screen.dart';
 
 import 'pages/login_page.dart';
@@ -42,6 +43,27 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: 'Poppins',
+        textTheme: const TextTheme(
+          titleLarge: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontWeight: FontWeight.w500,
+          ),
+          bodyLarge: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+          ),
+          bodyMedium: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
+          displayMedium: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 18,
+            color: Colors.black,
+          ),
+        ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(mainColor),
@@ -65,7 +87,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/main': (context) => LoginPage(),
         '/register': (context) => RegisterPage(),
-        '/home': (context) => FeaturedScreen(),
+        '/home': (context) => BaseScreen(),
       },
     );
   }

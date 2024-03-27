@@ -1,7 +1,7 @@
 // ignore_for_file: duplicate_import, unused_import, use_key_in_widget_constructors, unused_label, unused_element, empty_statements
 
-import 'package:education_app/widgets/forward_button.dart';
-import 'package:education_app/widgets/forward_button.dart';
+import 'package:login/widget/forward_button.dart';
+import 'package:login/widget/forward_button.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 

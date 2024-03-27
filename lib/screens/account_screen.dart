@@ -53,14 +53,14 @@ class _AccountScreenState extends State<AccountScreen> {
                 width: double.infinity,
                 child: Row(
                   children: [
-                    Image.asset("assets/icons/lenah.jpg",
+                    Image.asset("assets/icons/avatar.png",
                         width: 70, height: 70),
                     const SizedBox(width: 20),
                     const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Uranus Code",
+                          "She Codes",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
@@ -68,7 +68,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Youtube Channel",
+                          "Student",
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey,
