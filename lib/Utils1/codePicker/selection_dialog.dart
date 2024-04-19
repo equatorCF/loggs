@@ -28,7 +28,7 @@ class SelectionDialog extends StatefulWidget {
       this.searchStyle,
       this.showFlag})
       : this.searchDecoration =
-            searchDecoration.copyWith(prefixIcon: Icon(Icons.search)),
+            searchDecoration.copyWith(prefixIcon: const Icon(Icons.search)),
         super(key: key);
 
   @override
@@ -49,7 +49,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                   textColor: textPrimaryColor,
                   fontSize: 16.0,
                   fontFamily: "Semibold"),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               TextField(
                 style: widget.searchStyle,
                 decoration: InputDecoration(
@@ -64,13 +64,13 @@ class _SelectionDialogState extends State<SelectionDialog> {
           ),
           children: [
             Container(
-                margin: EdgeInsets.only(top: 16),
+                margin: const EdgeInsets.only(top: 16),
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
                 child: ListView(
                     children: [
                   widget.favoriteElements.isEmpty
-                      ? DecoratedBox(decoration: BoxDecoration())
+                      ? const DecoratedBox(decoration: BoxDecoration())
                       : Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[]
@@ -84,7 +84,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                                   ),
                                 )
                                 .toList())
-                            ..add(Divider())),
+                            ..add(const Divider())),
                 ]..addAll(filteredElements.isEmpty
                         ? [_buildEmptySearchWidget(context)]
                         : filteredElements.map((e) => SimpleDialogOption(
@@ -107,7 +107,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
           widget.showFlag!
               ? Flexible(
                   child: Padding(
-                    padding: EdgeInsets.only(right: 16.0),
+                    padding: const EdgeInsets.only(right: 16.0),
                     child: CachedNetworkImage(
                       placeholder: placeholderWidgetFn() as Widget Function(
                           BuildContext, String)?,
@@ -142,7 +142,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
       return widget.emptySearchBuilder!(context);
     }
 
-    return Center(child: Text('No Country Found'));
+    return const Center(child: Text('No Country Found'));
   }
 
   @override

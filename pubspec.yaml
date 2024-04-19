@@ -28,6 +28,7 @@ dependencies:
   html: ^0.15.0
   intl: ^0.17.0
   connectivity_plus_web: ^1.2.5 
+  flutter_lints: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -40,6 +41,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/animations/
+    - assets/images/
     
   
 

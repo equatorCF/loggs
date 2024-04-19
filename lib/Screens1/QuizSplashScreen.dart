@@ -1,6 +1,7 @@
-// ignore_for_file: unnecessary_import
+// ignore_for_file: unnecessary_import, use_key_in_widget_constructors, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:login/Screens1/QuizAllList.dart';
 import 'package:login/Screens1/QuizSignIn.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -26,9 +27,10 @@ class _QuizSplashScreenState extends State<QuizSplashScreen> {
     bool onboardingComplete = prefs.getBool('onboarding_complete') ?? false;
 
     if (onboardingComplete) {
-      await 3.seconds.delay.then((value) => push(QuizSignIn(),
+      await 3.seconds.delay.then((value) => push(QuizAllList(),
           pageRouteAnimation: PageRouteAnimation.Slide, isNewTask: true));
     } else {
+      // ignore: prefer_const_constructors
       await 3.seconds.delay.then((value) => push(onBoardingScreenHome(),
           pageRouteAnimation: PageRouteAnimation.Slide, isNewTask: true));
     }
@@ -47,7 +49,7 @@ class _QuizSplashScreenState extends State<QuizSplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            commonCacheImageWidget("images/quiz/ic_background.png",
+            commonCacheImageWidget("assets/images/ic_background.png",
                 height: 250, width: 250),
           ],
         ).withWidth(context.width()),

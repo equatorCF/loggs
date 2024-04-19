@@ -8,6 +8,7 @@ import 'package:login/Utils1/QuizConstant.dart';
 import 'package:login/Utils1/QuizStrings.dart';
 import 'package:login/Utils1/QuizWidget.dart';
 
+// ignore: use_key_in_widget_constructors
 class QuizSignIn extends StatefulWidget {
   static String tag = '/QuizSignIn';
 
@@ -29,7 +30,7 @@ class _QuizSignInState extends State<QuizSignIn> {
             color: quiz_app_background,
             child: Column(
               children: <Widget>[
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 text(quiz_title_login,
                     fontSize: textSizeNormal, fontFamily: fontBold),
                 text(quiz_info_login,
@@ -38,7 +39,7 @@ class _QuizSignInState extends State<QuizSignIn> {
                         isCentered: true)
                     .center(),
                 Container(
-                  margin: EdgeInsets.all(24.0),
+                  margin: const EdgeInsets.all(24.0),
                   decoration: boxDecoration(
                       bgColor: quiz_white,
                       color: quiz_white,
@@ -53,7 +54,7 @@ class _QuizSignInState extends State<QuizSignIn> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Container(
                   child: Column(
                     children: <Widget>[
@@ -68,11 +69,11 @@ class _QuizSignInState extends State<QuizSignIn> {
                     QuizSignUp().launch(context);
                   });
                 }),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                    margin: EdgeInsets.all(24.0),
+                    margin: const EdgeInsets.all(24.0),
                     child: quizButton(
                         textContent: quiz_lbl_continue,
                         onPressed: () {

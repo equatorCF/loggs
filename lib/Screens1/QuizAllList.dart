@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -36,19 +38,19 @@ class _QuizAllListState extends State<QuizAllList> {
       crossAxisCount: 4,
       mainAxisSpacing: 4.0,
       crossAxisSpacing: 4.0,
-      staggeredTileBuilder: (index) => StaggeredTile.fit(2),
+      staggeredTileBuilder: (index) => const StaggeredTile.fit(2),
       scrollDirection: Axis.vertical,
       itemCount: mListings.length,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemBuilder: (context, index) {
         changeStatusColor(quiz_app_background);
         return Container(
-          margin: EdgeInsets.all(8),
+          margin: const EdgeInsets.all(8),
           child: Column(
             children: <Widget>[
               ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16.0),
                     topRight: Radius.circular(16.0)),
                 child: CachedNetworkImage(
@@ -61,7 +63,7 @@ class _QuizAllListState extends State<QuizAllList> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16.0),
                       bottomRight: Radius.circular(16.0)),
@@ -94,20 +96,20 @@ class _QuizAllListState extends State<QuizAllList> {
       crossAxisCount: 4,
       mainAxisSpacing: 4.0,
       crossAxisSpacing: 4.0,
-      staggeredTileBuilder: (index) => StaggeredTile.fit(2),
+      staggeredTileBuilder: (index) => const StaggeredTile.fit(2),
       scrollDirection: Axis.vertical,
       itemCount: mListings.length,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemBuilder: (context, index) {
         changeStatusColor(quiz_app_background);
         return Container(
-          margin: EdgeInsets.all(8),
+          margin: const EdgeInsets.all(8),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16.0),
                     topRight: Radius.circular(16.0)),
                 child: CachedNetworkImage(
@@ -120,7 +122,7 @@ class _QuizAllListState extends State<QuizAllList> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16.0),
                       bottomRight: Radius.circular(16.0)),
@@ -140,7 +142,8 @@ class _QuizAllListState extends State<QuizAllList> {
                     LinearProgressIndicator(
                       value: 0.5,
                       backgroundColor: textSecondaryColor.withOpacity(0.2),
-                      valueColor: AlwaysStoppedAnimation<Color>(quiz_green),
+                      valueColor:
+                          const AlwaysStoppedAnimation<Color>(quiz_green),
                     ).paddingOnly(left: 16, right: 16, bottom: 16),
                   ],
                 ),
@@ -161,14 +164,14 @@ class _QuizAllListState extends State<QuizAllList> {
           child: Container(
             child: Column(
               children: <Widget>[
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
                 Container(
                   width: width,
                   decoration: boxDecoration(
                       radius: spacing_middle,
                       bgColor: quiz_white,
                       showShadow: false),
-                  margin: EdgeInsets.fromLTRB(16, 0, 16, 16),
+                  margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                   child: Row(
                     children: <Widget>[
                       Flexible(
@@ -178,10 +181,10 @@ class _QuizAllListState extends State<QuizAllList> {
                             setState(() {});
                           },
                           child: Container(
-                            padding: EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8.0),
                             width: width,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(spacing_middle),
                                   bottomLeft: Radius.circular(spacing_middle)),
                               color: selectedPos == 1
@@ -215,10 +218,10 @@ class _QuizAllListState extends State<QuizAllList> {
                             });
                           },
                           child: Container(
-                            padding: EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(16.0),
                             width: width,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                   topRight: Radius.circular(spacing_middle),
                                   bottomRight: Radius.circular(spacing_middle)),
                               color: selectedPos == 2
@@ -246,9 +249,9 @@ class _QuizAllListState extends State<QuizAllList> {
                   ),
                 ),
                 SingleChildScrollView(
-                  physics: ScrollPhysics(),
+                  physics: const ScrollPhysics(),
                   child: Container(
-                    margin: EdgeInsets.only(right: 8, left: 8),
+                    margin: const EdgeInsets.only(right: 8, left: 8),
                     child: selectedPos == 1 ? quizAll : quizCompleted,
                   ),
                 ),

@@ -30,12 +30,14 @@ Future<void> main() async {
     await FirebaseAuth.instanceFor(app: app).setPersistence(Persistence.LOCAL);
   }
   analytics = FirebaseAnalytics.instanceFor(app: app);
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 const mainColor = Color(0xFF4672ff);
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -68,7 +70,7 @@ class MyApp extends StatelessWidget {
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(mainColor),
             minimumSize: MaterialStateProperty.all(
-              Size.fromHeight(60),
+              const Size.fromHeight(60),
             ),
             shape: MaterialStateProperty.all(
               RoundedRectangleBorder(
@@ -83,11 +85,11 @@ class MyApp extends StatelessWidget {
       ],
       initialRoute: '/',
       routes: {
-        '/': (context) => SplashPage(),
-        '/login': (context) => LoginPage(),
-        '/main': (context) => LoginPage(),
-        '/register': (context) => RegisterPage(),
-        '/home': (context) => BaseScreen(),
+        '/': (context) => const SplashPage(),
+        '/login': (context) => const LoginPage(),
+        '/main': (context) => const LoginPage(),
+        '/register': (context) => const RegisterPage(),
+        '/home': (context) => const BaseScreen(),
       },
     );
   }

@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_final_fields, prefer_const_constructors, unused_import
 
+import 'package:login/Screens1/QuizAllList.dart';
+import 'package:login/Screens1/QuizSplashScreen.dart';
 import 'package:login/constants/color.dart';
 import 'package:login/constants/icons.dart';
 import 'package:login/constants/size.dart';
@@ -23,7 +25,7 @@ class _BaseScreenState extends State<BaseScreen> {
   static List<Widget> _widgetOptions = <Widget>[
     FeaturedScreen(),
     Leaderboard(),
-    Wishlist(),
+    QuizAllList(),
     Settings(),
   ];
   @override

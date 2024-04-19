@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, camel_case_types
 
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';

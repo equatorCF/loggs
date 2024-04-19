@@ -1,5 +1,3 @@
-
-
 class Chat {
   final String title;
   final String subtitle;
@@ -27,34 +25,33 @@ class Items {
 //  onBoardingScreens Intro Contents for Quiz App
 List<Items> listOfItems = [
   Items(
-    img: "images/quiz/quiz_logo.jpg",
+    img: "assets/images/logo.jpeg",
     title: "Challenge your friends",
     subTitle:
-    "Engage in quiz challenges with your friends\nand family using our app.",
+        "Engage in quiz challenges with your friends\nand family using our app.",
     chat: Chat(
       title: "Quiz Challenges",
       subtitle: "Challenge your best friends to quiz battles.",
     ),
   ),
   Items(
-    img: "images/quiz/quiz_logo.jpg",
+    img: "assets/images/logo.jpeg",
     title: "Join exciting quiz groups",
     subTitle:
-    "Find and join groups that share your quiz\ninterests and participate together.",
+        "Find and join groups that share your quiz\ninterests and participate together.",
     chat: Chat(
       title: "Quiz Groups",
       subtitle: "Join groups with quiz enthusiasts.",
     ),
   ),
   Items(
-    img: "images/quiz/quiz_logo.jpg",
+    img: "assets/images/logo.jpeg",
     title: "Discover quiz enthusiasts",
     subTitle:
-    "Connect with new people who share your\npassion for quizzes around the world.",
+        "Connect with new people who share your\npassion for quizzes around the world.",
     chat: Chat(
       title: "Quiz Connections",
       subtitle: "Discover and chat with fellow quiz enthusiasts.",
     ),
   ),
 ];
-
