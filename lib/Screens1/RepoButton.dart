@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:login/utils1/QuizColors.dart';
+import 'package:login/Utils1/QuizColors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class RepoButton extends StatelessWidget {

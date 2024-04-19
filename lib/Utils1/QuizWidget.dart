@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:login/utils1/AppWidget.dart';
-import 'package:login/utils1/QuizColors.dart';
+import 'package:login/Utils1/AppWidget.dart';
+import 'package:login/Utils1/QuizColors.dart';
 
 import 'QuizConstant.dart';
 

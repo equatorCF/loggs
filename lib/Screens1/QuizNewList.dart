@@ -4,12 +4,12 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:login/Screens1/RepoScreen.dart';
 import 'package:login/model2/QuizModels.dart';
-import 'package:login/utils1/AppWidget.dart';
-import 'package:login/utils1/QuizColors.dart';
-import 'package:login/utils1/QuizConstant.dart';
-import 'package:login/utils1/QuizDataGenerator.dart';
-import 'package:login/utils1/QuizImages.dart';
-import 'package:login/utils1/QuizStrings.dart';
+import 'package:login/Utils1/AppWidget.dart';
+import 'package:login/Utils1/QuizColors.dart';
+import 'package:login/Utils1/QuizConstant.dart';
+import 'package:login/Utils1/QuizDataGenerator.dart';
+import 'package:login/Utils1/QuizImages.dart';
+import 'package:login/Utils1/QuizStrings.dart';
 
 class QuizListing extends StatefulWidget {
   static String tag = '/QuizListing';

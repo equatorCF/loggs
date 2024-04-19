@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:login/Screens1/QuizSignIn.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:login/utils1/AppWidget.dart';
+import 'package:login/Utils1/AppWidget.dart';
 
 import 'package:login/onBoardingScreen/views/onBoardingScreen.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login/Screens1/RepoScreen.dart';
 import 'package:login/model2/QuizModels.dart';
-import 'package:login/utils1/QuizColors.dart';
-import 'package:login/utils1/QuizDataGenerator.dart';
+import 'package:login/Utils1/QuizColors.dart';
+import 'package:login/Utils1/QuizDataGenerator.dart';
 
 class QuizSearch extends StatefulWidget {
   static String tag = '/QuizSearch';

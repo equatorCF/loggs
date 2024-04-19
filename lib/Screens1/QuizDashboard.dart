@@ -3,9 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login/Screens1/QuizAllList.dart';
 import 'package:login/Screens1/QuizHome.dart';
 import 'package:login/Screens1/QuizProfile.dart';
-import 'package:login/utils1/AppWidget.dart';
-import 'package:login/utils1/QuizColors.dart';
-import 'package:login/utils1/QuizImages.dart';
+import 'package:login/Utils1/AppWidget.dart';
+import 'package:login/Utils1/QuizColors.dart';
+import 'package:login/Utils1/QuizImages.dart';
 
 class QuizDashboard extends StatefulWidget {
   static String tag = '/QuizDashboard';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:login/Screens1/RepoScreen.dart';
-import 'package:login/utils1/AppWidget.dart';
-import 'package:login/utils1/QuizColors.dart';
-import 'package:login/utils1/QuizStrings.dart';
+import 'package:login/Utils1/AppWidget.dart';
+import 'package:login/Utils1/QuizColors.dart';
+import 'package:login/Utils1/QuizStrings.dart';
 
 class QuizSettings extends StatefulWidget {
   static String tag = '/QuizSetting';

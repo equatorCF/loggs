@@ -3,7 +3,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:login/utils1/AppWidget.dart';
+import 'package:login/Utils1/AppWidget.dart';
 
 import '../../../main.dart';
 import 'country_code.dart';

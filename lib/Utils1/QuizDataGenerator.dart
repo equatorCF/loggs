@@ -1,5 +1,5 @@
 import 'package:login/model2/QuizModels.dart';
-import 'package:login/utils1/QuizImages.dart';
+import 'package:login/Utils1/QuizImages.dart';
 
 List<NewQuizModel> getQuizData() {
   List<NewQuizModel> list = [];

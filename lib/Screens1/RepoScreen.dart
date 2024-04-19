@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:login/Screens1/RepoButton.dart';
-import 'package:login/utils1/AppWidget.dart';
+import 'package:login/Utils1/AppWidget.dart';
 
 class RepoScreen extends StatefulWidget {
   final bool? enableAppbar;
