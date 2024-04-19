@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/pages/login_page.dart';
+import 'package:lottie/lottie.dart';
 
 class LoggedOutScreen extends StatelessWidget {
   @override
@@ -12,11 +13,14 @@ class LoggedOutScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'You are logged out.',
-              style: TextStyle(fontSize: 24),
+            // Lottie Animation
+            Lottie.asset(
+              'assets/animations/logout3.json', // Replace 'assets/animation.json' with the path to your Lottie animation JSON file
+              width: 500,
+              height: 500,
             ),
             SizedBox(height: 16),
+            // Button to return to login
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
@@ -24,7 +28,7 @@ class LoggedOutScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => LoginPage()),
                 );
               },
-              child: Text('Log In'),
+              child: Text(' Login'),
             ),
           ],
         ),

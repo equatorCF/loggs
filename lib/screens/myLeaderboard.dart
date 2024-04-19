@@ -20,8 +20,6 @@ Color blue1 = const Color(0xff3e48d0);
 Color blue2 = const Color(0xff216cc3);
 Color bronze = const Color(0xFFA45735);
 
-//Color list_item = Colors.grey[200];
-
 class Leaderboard extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _Leaderboard();
@@ -29,73 +27,49 @@ class Leaderboard extends StatefulWidget {
 
 class _Leaderboard extends State<Leaderboard> {
   List<String> names = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4"
+    "John Doe",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    "Alice Smith",
+    // Add more names as needed
   ];
+
   List<String> litems = [
     "1",
     "2",
     "3",
     "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4",
-    "1",
-    "2",
-    "3",
-    "4"
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
   ];
+
+  List<String> avatarUrls = [
+    "https://example.com/avatar1.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+    "https://example.com/avatar2.jpg",
+
+    // Add more avatar URLs corresponding to the names
+  ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -231,6 +205,7 @@ class _Leaderboard extends State<Leaderboard> {
     int ind = index + 1;
     final pos = litems[index];
     final name = names[index];
+    final avatarUrl = avatarUrls[index]; // Get the avatar URL
 
     Widget listItem;
 
@@ -247,8 +222,9 @@ class _Leaderboard extends State<Leaderboard> {
               Text(pos,
                   style: const TextStyle(
                       color: Colors.black, fontWeight: FontWeight.bold)),
-              const CircleAvatar(
+              CircleAvatar(
                 foregroundColor: Colors.green,
+                backgroundImage: NetworkImage(avatarUrl), // Set the avatar URL
               ),
               Text(
                 name,
@@ -277,8 +253,9 @@ class _Leaderboard extends State<Leaderboard> {
               Text(pos,
                   style: const TextStyle(
                       color: Colors.black, fontWeight: FontWeight.bold)),
-              const CircleAvatar(
+              CircleAvatar(
                 foregroundColor: Colors.green,
+                backgroundImage: NetworkImage(avatarUrl), // Set the avatar URL
               ),
               Text(
                 name,
@@ -307,8 +284,9 @@ class _Leaderboard extends State<Leaderboard> {
               Text(pos,
                   style: const TextStyle(
                       color: Colors.black, fontWeight: FontWeight.bold)),
-              const CircleAvatar(
+              CircleAvatar(
                 foregroundColor: Colors.green,
+                backgroundImage: NetworkImage(avatarUrl), // Set the avatar URL
               ),
               Text(
                 name,
@@ -337,8 +315,9 @@ class _Leaderboard extends State<Leaderboard> {
               Text(pos,
                   style: const TextStyle(
                       color: Colors.black, fontWeight: FontWeight.bold)),
-              const CircleAvatar(
+              CircleAvatar(
                 foregroundColor: Colors.green,
+                backgroundImage: NetworkImage(avatarUrl), // Set the avatar URL
               ),
               Text(
                 name,

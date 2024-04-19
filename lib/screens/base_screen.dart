@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_final_fields, prefer_const_constructors
+// ignore_for_file: prefer_final_fields, prefer_const_constructors, unused_import
 
 import 'package:login/constants/color.dart';
 import 'package:login/constants/icons.dart';
@@ -9,6 +9,7 @@ import 'package:login/screens/myLeaderboard.dart';
 import 'package:login/screens/settings.dart';
 import 'package:login/screens/wishlist.dart';
 import 'package:flutter/material.dart';
+import 'package:login/screens/myQuiz.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({Key? key}) : super(key: key);
@@ -68,7 +69,7 @@ class _BaseScreenState extends State<BaseScreen> {
                 icWishlistOutlined,
                 height: kBottomNavigationBarItemSize,
               ),
-              label: "Progress",
+              label: "Quiz",
             ),
             BottomNavigationBarItem(
               activeIcon: Image.asset(
